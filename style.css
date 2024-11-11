@@ -61,23 +61,30 @@ h2 {
   justify-content: center;
 }
 
+/* Обертка для изображения и текста */
+.gallery-item {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
 .gallery-image {
-  width: calc(33.333% - 20px); /* Изображения занимают 1/3 ширины экрана */
+  width: 300px; /* Увеличим размер изображения */
   height: auto;
+  float: left;
+  margin-right: 15px; /* Отступ между изображением и текстом */
   transition: transform 0.3s ease;
 }
 
 .gallery-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05); /* Лёгкое увеличение при наведении */
   cursor: pointer;
 }
 
 .gallery-description {
-  text-align: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
+  text-align: justify; /* Выравнивание текста по ширине */
 }
-
 
 table {
   width: 100%;
